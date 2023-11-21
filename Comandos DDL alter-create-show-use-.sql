@@ -1,7 +1,7 @@
- -- create database projeto_integrador3; --> comando para criar banco de dados
- -- show databases; -> Comando para mostrar os banco de dados no servidor.
- -- use projeto_integrador3; -> Comando "use + nome do banco de dados" para especificado banco de dados que vai ser utilizado
- -- select databases -> qual banco de dados está sendo utilizado.
+ create database projeto_integrador3; -- comando para criar banco de dados
+ -- show databases; -- Comando para mostrar os banco de dados no servidor.
+ use projeto_integrador3; -- Comando "use + nome do banco de dados" para especificado banco de dados que vai ser utilizado
+ -- select databases -- qual banco de dados está sendo utilizado.
  
  -- Criação tabela Usuario--
  create table usuario(
