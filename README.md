@@ -1,4 +1,4 @@
-# PI - Projeto de Implantação do Banco de Dados MySQL
+# Projeto de Implantação do Banco de Dados com MySQL
 
 Este documento fornece informações essenciais para a implementação do banco de dados MySQL neste projeto. Siga as instruções abaixo para garantir uma instalação e configuração adequadas.
 
