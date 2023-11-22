@@ -1,7 +1,7 @@
 # Projeto de Implantação do Banco de Dados com MySQL
 
 
-##Introdução
+## Introdução
 Este documento fornece informações essenciais para garantir uma implementação bem-sucedida do banco de dados MySQL neste projeto. Siga as instruções abaixo para uma instalação e configuração adequadas.
 
 ## Integrantes Grupo 4
@@ -48,13 +48,15 @@ Os Comandos utilizando para criação da base de dados:
 		4.select databases -> verificar o banco de dados atual. I
 	
 ### Estrutura da Tabela:
-create table usuario(
-  id_usuario smallint auto_increment primary key,
-  nome Varchar(50) not null,
-  senha varchar(50) not null,
-  data_cadastro DATETIME,
-  status enum('A','D') 
-);
+
+	create table usuario(
+	id_usuario smallint auto_increment primary key,
+	nome Varchar(50) not null,
+	senha varchar(50) not null,
+	data_cadastro DATETIME,
+	status enum('A','D') 
+	);
+
 Caso seja necessário, execute o script **create table usuario** Utilize o cliente MySQL ou uma ferramenta semelhante para executar o script.
 
 ### Inserindo Dados na Tabela
