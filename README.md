@@ -1,56 +1,74 @@
-# PI - Projeto de Implantação do Banco de Dados MySQL
+# Projeto de Implantação do Banco de Dados MySQL
 
-Este documento fornece informações essenciais para a implementação do banco de dados MySQL neste projeto. Siga as instruções abaixo para garantir uma instalação e configuração adequadas.
+##Introdução
+Este documento fornece informações essenciais para garantir uma implementação bem-sucedida do banco de dados MySQL neste projeto. Siga as instruções abaixo para uma instalação e configuração adequadas.
 
 ## Integrantes Grupo 4
 1. Anderson Aparecido Lemos
 2. Diego de Oliveira Silva
 3. Diego Vieira Torres
 
-## Pré-requisitos
-Antes de iniciar a implantação do banco de dados MySQL, certifique-se de ter as seguintes ferramentas e recursos instalados abaixo.
-
-### - Servidor MySQL
-Instale o servidor MySQL em seu ambiente. Você pode baixar a versão mais recente em MySQL Downloads.
-[download MySQL Downloads](https://www.mysql.com/downloads/)
-
-
-### - Cliente MySQL
-Tenha um cliente MySQL instalado para facilitar a administração do banco de dados. Recomendamos o uso do MySQL Workbench, disponível em MySQL Workbench Downloads.[download MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
-
-## Configuração do Ambiente
-Certifique-se de ter as permissões para criar bancos de dados e tabelas.
-
 ## Procedimento de Instalação
+	1-Download do Instalador
+	Acesse MySQL Downloads: https://www.mysql.com/downloads/ e baixe o instalador apropriado para o seu sistema operacional.
+	2-Execução do Instalador
+	Execute o arquivo de instalação baixado
+	3-Configuração do MySQL Server
+	Escolha "MySQL Server" durante a instalação.
+	Configure uma senha para o usuário "root" do MySQL.
+	Escolha as opções de configuração adequadas para o seu ambiente.
+	4-Verificação da Instalação
+	Abra o prompt de comando e execute mysql -u root -p para verificar a conexão com o MySQL Server.
+	
+### - Instalar o MySQL Workbench (Opcional)
+Se você deseja uma interface gráfica para administrar o MySQL, também pode instalar o MySQL Workbench:
+	Baixe o MySQL Workbench em MySQL Workbench Downloads: https://dev.mysql.com/downloads/workbench/.
+	Execute o instalador e siga as instruções na tela para concluir a instalação.
 
-### Criação do Banco de Dados
-Execute o script de criação do banco de dados. O arquivo SQL correspondente pode ser encontrado em **sql/create_database.sql**. Utilize o cliente MySQL ou uma ferramenta semelhante para executar o script.
+### Conectar-se ao servidor usando MySQL Workbench
+Para se conectar ao MySQL Server usando o MySQL Workbench:
 
-### Estrutura da Tabela
-O script para criar a estrutura da tabela está disponível em **sql/create_table.sql**. Execute este script para definir a estrutura das tabelas permitidas.
+	Inicie o aplicativo MySQL Workbench em seu computador.
+	Na caixa de diálogo Configurar Nova Conexão, insira as seguintes informações na guia Parâmetros:
+	Nome da conexão: Projeto Integrador 3
+	Nome do servidor: localhost
+	Porta: 3306
+	Usuário: root
+	Senha: [senha do usuário root]	
 
-### Dados Iniciais (Opcional):
-Caso seja necessário, execute o script **sql/insert_data.sql** para inserir dados iniciais no banco de dados. 
+### Criando Banco de Dados via Script SQL
+Execute o script SQL usando o cliente MySQL ou o MySQL Workbench.
+O script para criar Base de Dadosestá disponível em **create database projeto_integrador3;**. 
 
-### Configuração Adicional (Opcional)
-#### Configurações de conexão:
-Verifique e, se necessário, ajuste as configurações de conexão no arquivo **config/database_config.yaml**. Isso inclui informações como nome do banco de dados, usuário, senha, etc.
+### Estrutura da Tabela:
+create table usuario(
+  id_usuario smallint auto_increment primary key,
+  nome Varchar(50) not null,
+  senha varchar(50) not null,
+  data_cadastro DATETIME,
+  status enum('A','D') 
+);
+Caso seja necessário, execute o script **create table usuario** Utilize o cliente MySQL ou uma ferramenta semelhante para executar o script.
 
-### Testes e Verificação
-Após a conclusão dos passos de instalação e configuração, é preciso realizar os seguintes testes.
+### Inserindo Dados na Tabela
+insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '123456', now(), 'A');
 
-#### Conexão com o Banco de Dados:
-Use o cliente MySQL ou outra ferramenta para conectar-se ao banco de dados especificado nas configurações e verifique se a conexão está bem concluída.
+### Linguagem de Definição de Dados (DDL)
+A linguagem de definição de dados (DDL) é usada para criar, modificar e excluir objetos de banco de dados, como tabelas, índices, visões e procedimentos armazenados.
+	.create: cria um novo objeto de banco de dados.
+	.alter: modifica um objeto de banco de dados existente.
+	.drop: exclui um objeto de banco de dados existente.
+#### Linguagem de Manipulação de Dados (DML)
+A linguagem de manipulação de dados (DML) é usada para inserir, excluir, atualizar e recuperar dados de tabelas.
 
-#### Consulta de Dados:
-Execute algumas consultas de teste para garantir que os dados estejam sendo inseridos e recuperados corretamente.
+Os comandos DML utilizados neste projeto são:
+	.insert: insere novos dados em uma tabela.
+	.update: atualiza dados existentes em uma tabela.
+	.delete: exclui dados de uma tabela.
 
-## Projeto Lógico
-### Scripts SQL 
--- create database projeto_integrador3; --> comando para criar banco de dados.
+#### Linguagem de Consulta de Dados (DQL)
+Data Query Language (DQL) - A Data Query Language é a sub-língua responsável pela leitura, ou consulta, de dados de um banco de dados. Em SQL, isto corresponde à SELECT
+	.SELECT: retorna um conjunto de resultados de registros de uma ou mais tabelas
+## Conclusão
+Esperamos que estas instruções facilitem a implementação do banco de dados MySQL em seu projeto. Em caso de problemas ou dúvidas, entre em contato com os integrantes do Grupo 4 listados acima. Boa sorte!
 
--- show databases; -> Comando para mostrar os banco de dados no servidor.
-
--- use projeto_integrador3; -> Comando "use + nome do banco de dados" para especificado banco de dados que vai ser utilizado.
-
--- select databases -> qual banco de dados está sendo utilizado.
