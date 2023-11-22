@@ -57,16 +57,19 @@ Caso seja necessário, execute o script **create table usuario** Utilize o clien
 ### Linguagem de Definição de Dados (DDL)
 A linguagem de definição de dados (DDL) é usada para criar, modificar e excluir objetos de banco de dados, como tabelas, índices, visões e procedimentos armazenados.
 OS Comando DDL utilizado no Projeto:
-	*Create: cria um novo objeto de banco de dados.
-	*Alter: modifica um objeto de banco de dados existente.
-	*Drop: exclui um objeto de banco de dados existente.
+
+	1.Create: cria um novo objeto de banco de dados.
+	2.Alter: modifica um objeto de banco de dados existente.
+	3.Drop: exclui um objeto de banco de dados existente.
+	
 #### Linguagem de Manipulação de Dados (DML)
 A linguagem de manipulação de dados (DML) é usada para inserir, excluir, atualizar e recuperar dados de tabelas.
 
 Os comandos DML utilizados neste projeto são:
-	*Insert: insere novos dados em uma tabela.
-	*Update: atualiza dados existentes em uma tabela.
-	*Delete: exclui dados de uma tabela.
+
+	1.Insert: insere novos dados em uma tabela.
+	2.Update: atualiza dados existentes em uma tabela.
+	3.Delete: exclui dados de uma tabela.
 
 #### Linguagem de Consulta de Dados (DQL)
 Data Query Language (DQL) - A Data Query Language é a sub-língua responsável pela leitura, ou consulta, de dados de um banco de dados. Em SQL, isto corresponde à SELECT
