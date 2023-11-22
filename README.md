@@ -2,7 +2,7 @@
 
 
 ## Introdução
-Este documento fornece informações essenciais para garantir uma implementação bem-sucedida do banco de dados MySQL neste projeto. Siga as instruções abaixo para uma instalação e configuração adequadas.
+Este documento fornece informações essenciais para garantir uma implementação bem-sucedida do banco de dados MySQL neste projeto, desenvolvido como parte do curso de Tecnologia em Banco de Dados do SENAC EAD. Siga as instruções abaixo para uma instalação e configuração adequadas.
 
 ## Integrantes Grupo 4
 1. Anderson Aparecido Lemos
