@@ -56,20 +56,21 @@ insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '1234
 
 ### Linguagem de Definição de Dados (DDL)
 A linguagem de definição de dados (DDL) é usada para criar, modificar e excluir objetos de banco de dados, como tabelas, índices, visões e procedimentos armazenados.
-	.create: cria um novo objeto de banco de dados.
-	.alter: modifica um objeto de banco de dados existente.
-	.drop: exclui um objeto de banco de dados existente.
+	Create: cria um novo objeto de banco de dados.
+	Alter: modifica um objeto de banco de dados existente.
+	Drop: exclui um objeto de banco de dados existente.
 #### Linguagem de Manipulação de Dados (DML)
 A linguagem de manipulação de dados (DML) é usada para inserir, excluir, atualizar e recuperar dados de tabelas.
 
 Os comandos DML utilizados neste projeto são:
-	.insert: insere novos dados em uma tabela.
-	.update: atualiza dados existentes em uma tabela.
-	.delete: exclui dados de uma tabela.
+	Insert: insere novos dados em uma tabela.
+	Update: atualiza dados existentes em uma tabela.
+	Delete: exclui dados de uma tabela.
 
 #### Linguagem de Consulta de Dados (DQL)
 Data Query Language (DQL) - A Data Query Language é a sub-língua responsável pela leitura, ou consulta, de dados de um banco de dados. Em SQL, isto corresponde à SELECT
 	.SELECT: retorna um conjunto de resultados de registros de uma ou mais tabelas
+
 ## Conclusão
 Esperamos que estas instruções facilitem a implementação do banco de dados MySQL em seu projeto. Em caso de problemas ou dúvidas, entre em contato com os integrantes do Grupo 4 listados acima. Boa sorte!
 
