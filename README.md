@@ -58,7 +58,12 @@ create table usuario(
 Caso seja necessário, execute o script **create table usuario** Utilize o cliente MySQL ou uma ferramenta semelhante para executar o script.
 
 ### Inserindo Dados na Tabela
-1.insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '123456', now(), 'A');
+Para isso, eu usei o comando INSERT
+Para usar o INSERT devemos escrever INSERT INTO e o nome da tabela. Depois colocar em parênteses as colunas que terão um valor inseridos, escrever VALUES e escrever em outro parênteses os valores que serão inseridos nas colunas.
+Como a coluna id será auto-incrementada automaticamente, sempre que uma linha for adicionada, não precisamos inserir um valor nela.
+Assim, iremos adicionar uma linha, que são os dados que terão na tabela:
+
+	1.insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '123456', now(), 'A');
 
 ### Linguagem de Definição de Dados (DDL)
 A linguagem de definição de dados (DDL) é usada para criar, modificar e excluir objetos de banco de dados, como tabelas, índices, visões e procedimentos armazenados.
