@@ -41,10 +41,11 @@ Para se conectar ao MySQL Server usando o MySQL Workbench:
 Execute o script SQL usando o cliente MySQL ou o MySQL Workbench.
 O script para criar Base de Dadosestá disponível em **create database projeto_integrador3;**. 
 Os Comandos utilizando para criação da base de dados:
-	1.create database projeto_integrador3; -> Criar um novo banco de dados
-	2.show databases; -> Comando para mostrar os banco de dados no servidor.
-	3.use projeto_integrador3; -> é o nome do banco de dados que você deseja definir como atual.
-	4.select databases -> verificar o banco de dados atual. I
+
+		1.create database projeto_integrador3; -> Criar um novo banco de dados
+		2.show databases; -> Comando para mostrar os banco de dados no servidor.
+		3.use projeto_integrador3; -> é o nome do banco de dados que você deseja definir como atual.
+		4.select databases -> verificar o banco de dados atual. I
 	
 ### Estrutura da Tabela:
 create table usuario(
