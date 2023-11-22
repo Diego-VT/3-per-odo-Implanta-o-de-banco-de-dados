@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Projeto de Implantação do Banco de Dados MySQL
+=======
+# Projeto de Implantação do Banco de Dados com MySQL
+>>>>>>> fa8245049db9e5dd954972070a44c17ec462e084
 
 ##Introdução
 Este documento fornece informações essenciais para garantir uma implementação bem-sucedida do banco de dados MySQL neste projeto. Siga as instruções abaixo para uma instalação e configuração adequadas.
@@ -72,3 +76,11 @@ Data Query Language (DQL) - A Data Query Language é a sub-língua responsável 
 ## Conclusão
 Esperamos que estas instruções facilitem a implementação do banco de dados MySQL em seu projeto. Em caso de problemas ou dúvidas, entre em contato com os integrantes do Grupo 4 listados acima. Boa sorte!
 
+<<<<<<< HEAD
+=======
+-- show databases; -> Comando para mostrar os banco de dados no servidor.
+
+-- use projeto_integrador3; -> Comando "use + nome do banco de dados" para especificado banco de dados que vai ser utilizado.
+
+-- select databases -> qual banco de dados está sendo utilizado.
+>>>>>>> fa8245049db9e5dd954972070a44c17ec462e084
