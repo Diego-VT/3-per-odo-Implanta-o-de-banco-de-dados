@@ -40,7 +40,12 @@ Para se conectar ao MySQL Server usando o MySQL Workbench:
 ### Criando Banco de Dados via Script SQL
 Execute o script SQL usando o cliente MySQL ou o MySQL Workbench.
 O script para criar Base de Dadosestá disponível em **create database projeto_integrador3;**. 
-
+Os Comandos utilizando para criação da base de dados:
+	1.create database projeto_integrador3; -> Criar um novo banco de dados
+	2.show databases; -> Comando para mostrar os banco de dados no servidor.
+	3.use projeto_integrador3; -> é o nome do banco de dados que você deseja definir como atual.
+	4.select databases -> verificar o banco de dados atual. I
+	
 ### Estrutura da Tabela:
 create table usuario(
   id_usuario smallint auto_increment primary key,
@@ -52,7 +57,7 @@ create table usuario(
 Caso seja necessário, execute o script **create table usuario** Utilize o cliente MySQL ou uma ferramenta semelhante para executar o script.
 
 ### Inserindo Dados na Tabela
-*insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '123456', now(), 'A');
+1.insert into usuario(nome, senha, data_cadastro, status) values('Anderson', '123456', now(), 'A');
 
 ### Linguagem de Definição de Dados (DDL)
 A linguagem de definição de dados (DDL) é usada para criar, modificar e excluir objetos de banco de dados, como tabelas, índices, visões e procedimentos armazenados.
